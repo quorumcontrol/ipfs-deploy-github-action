@@ -1,0 +1,20 @@
+name: 'IPFS Deploy'
+description: 'Deploy code & content to IPFS pinning service'
+author: 'Quorum Control, GmbH'
+inputs:
+  pinning-service:
+    description: 'The pinning service to use'
+    required: true
+    default: 'pinata'
+  pinata-api-key:
+    description: 'API key for Piñata pinning service'
+    required: false
+  pinata-secret-api-key:
+    description: 'Secret API key for Piñata pinning service'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'box'
+  color: 'blue'
