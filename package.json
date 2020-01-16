@@ -4,8 +4,7 @@
   "description": "GitHub action to deploy code & content to IPFS pinning services",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write src/**/*.js",
-    "build": "npm run format && cp src/index.js index.js"
+    "format": "prettier --write src/**/*.js"
   },
   "repository": {
     "type": "git",
