@@ -12,6 +12,9 @@ inputs:
   pinata-secret-api-key:
     description: 'Secret API key for Piñata pinning service'
     required: false
+outputs:
+  ipfs-hash:
+    description: 'Hash of pinned IPFS deployment'
 runs:
   using: 'node12'
   main: 'dist/index.js'
