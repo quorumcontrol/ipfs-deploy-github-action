@@ -9,12 +9,14 @@ async function main() {
 
     core.info(`Deploying to ${pinningService}`);
 
-      remotePinners: pinningService,
     const ipfsHash = await deploy({
+      remotePinners: [pinningService],
       pinata: {
         apiKey: pinataAPIKey,
         secretApiKey: pinataSecretAPIKey
-      }
+      },
+      open: false,
+      copyHttpGatewayUrlToClipboard: false
     });
 
     core.setOutput("ipfs-hash", ipfsHash);
