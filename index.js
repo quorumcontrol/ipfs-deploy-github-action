@@ -11,9 +11,11 @@ async function main() {
 
     const ipfsHash = await deploy({
       remotePinners: [pinningService],
-      pinata: {
-        apiKey: pinataAPIKey,
-        secretApiKey: pinataSecretAPIKey
+      credentials: {
+        pinata: {
+          apiKey: pinataAPIKey,
+          secretApiKey: pinataSecretAPIKey
+        }
       },
       open: false,
       copyHttpGatewayUrlToClipboard: false
