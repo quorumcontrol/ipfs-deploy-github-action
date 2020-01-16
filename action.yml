@@ -2,6 +2,9 @@ name: 'IPFS Deploy'
 description: 'Deploy code & content to IPFS pinning service'
 author: 'Quorum Control, GmbH'
 inputs:
+  deploy-dir:
+    description: 'The directory to deploy (can often be guessed)'
+    required: false
   pinning-service:
     description: 'The pinning service to use'
     required: true
