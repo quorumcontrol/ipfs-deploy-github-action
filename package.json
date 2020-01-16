@@ -2,11 +2,10 @@
   "name": "ipfs-deploy-github-action",
   "version": "1.0.0",
   "description": "GitHub action to deploy code & content to IPFS pinning services",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "format": "prettier --write src/**/*.js",
-    "pack": "ncc build src/index.js",
-    "build": "npm run format && npm run pack"
+    "build": "npm run format && cp src/index.js index.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,6 @@
     "ipfs-deploy": "^7.13.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.21.0",
     "prettier": "^1.19.1"
   }
 }
