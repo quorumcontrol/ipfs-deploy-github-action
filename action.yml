@@ -15,6 +15,18 @@ inputs:
   pinata-secret-api-key:
     description: 'Secret API key for Piñata pinning service'
     required: false
+  cloudflare-api-email:
+    description: 'Cloudflare API email for DNS updates'
+    required: false
+  cloudflare-api-key:
+    description: 'Cloudflare API key for DNS updates'
+    required: false
+  cloudflare-zone:
+    description: 'Cloudflare DNS zone to update on deployment'
+    required: false
+  cloudflare-record:
+    description: 'Cloudflare DNS record to update on deployment'
+    required: false
 outputs:
   ipfs-hash:
     description: 'Hash of pinned IPFS deployment'
