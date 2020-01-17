@@ -9,6 +9,7 @@ async function main() {
     const pinataSecretAPIKey = core.getInput("pinata-secret-api-key");
     const cloudflareAPIEmail = core.getInput("cloudflare-api-email");
     const cloudflareAPIKey = core.getInput("cloudflare-api-key");
+    const cloudflareAPIToken = core.getInput("cloudflare-api-token");
     const cloudflareZone = core.getInput("cloudflare-zone");
     const cloudflareRecord = core.getInput("cloudflare-record");
 
@@ -26,6 +27,7 @@ async function main() {
         cloudflare: {
           apiEmail: cloudflareAPIEmail,
           apiKey: cloudflareAPIKey,
+          apiToken: cloudflareAPIToken,
           zone: cloudflareZone,
           record: cloudflareRecord
         }

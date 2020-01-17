@@ -21,6 +21,9 @@ inputs:
   cloudflare-api-key:
     description: 'Cloudflare API key for DNS updates'
     required: false
+  cloudflare-api-token:
+    description: 'Cloudflare API token for DNS updates'
+    required: false
   cloudflare-zone:
     description: 'Cloudflare DNS zone to update on deployment'
     required: false
